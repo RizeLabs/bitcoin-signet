@@ -1,17 +1,19 @@
-# Bitcoin Surge Signet Docker Image
+# Bitcoin Encifher Signet Docker Image
 
 ## 📌 Table of Contents
 
-- [🔍 Overview](#-overview)
-- [🛠 Environment Variables](#-environment-variables)
-  - [⛏ Mining Configuration](#-mining-configuration)
-  - [🌐 RPC Configuration](#-rpc-configuration)
-  - [🌍 Network Configuration](#-network-configuration)
-  - [📡 ZMQ Configuration](#-zmq-configuration)
-  - [🔧 Additional Configuration](#-additional-configuration)
-- [🚀 Building and Running the Docker Image](#-building-and-running-the-docker-image)
-- [🔧 Docker Commands](#-docker-commands)
-- [📜 License](#-license)
+- [Bitcoin Encifher Signet Docker Image](#bitcoin-encifher-signet-docker-image)
+  - [📌 Table of Contents](#-table-of-contents)
+  - [🔍 Overview](#-overview)
+  - [🛠 Environment Variables](#-environment-variables)
+    - [⛏ Mining Configuration:](#-mining-configuration)
+    - [🌐 RPC Configuration:](#-rpc-configuration)
+    - [🌍 Network Configuration:](#-network-configuration)
+    - [📡 ZMQ Configuration:](#-zmq-configuration)
+    - [🔧 Additional Configuration:](#-additional-configuration)
+  - [🚀 Building and Running the Docker Image](#-building-and-running-the-docker-image)
+  - [🔧 Docker Commands](#-docker-commands)
+  - [📜 License](#-license)
 
 ---
 
@@ -64,18 +66,18 @@ Bitcoin Signet provides a sandboxed environment for Bitcoin, allowing developers
 1. **Building the Docker Image**:
 
    ```bash
-   docker build -t surge-signet .
+   docker build -t encifher-signet .
    ```
 
 2. **Running the Docker Image**:
    ```bash
-   docker network create surge-network 
-   docker run -d --name surge-signet-instance \
+   docker network create encifher-network 
+   docker run -d --name encifher-signet-instance \
    -e COOKIEFILE=true \
-   --network surge-network \
+   --network encifher-network \
    -v /path/to/bitcoin/data:/root/.bitcoin \
    -p 38332:38332 \
-   surge-signet
+   encifher-signet
    ```
 
 **Note**: Ensure you have Docker installed and running on your machine before executing the above commands. Adjust configurations as needed for your specific use case.
@@ -99,43 +101,43 @@ To make the most out of the Bitcoin Signet Docker image, here are some essential
 3. **Stop a running container**:
 
    ```bash
-   docker stop surge-signet-instance
+   docker stop encifher-signet-instance
    ```
 
 4. **Start a stopped container**:
 
    ```bash
-   docker start surge-signet-instance
+   docker start encifher-signet-instance
    ```
 
 5. **Remove a container**:
 
    ```bash
-   docker rm surge-signet-instance
+   docker rm encifher-signet-instance
    ```
 
 6. **View logs of a container**:
 
    ```bash
-   docker logs surge-signet-instance
+   docker logs encifher-signet-instance
    ```
 
 7. **Execute a command inside a running container**:
 
    ```bash
-   docker exec -it surge-signet-instance /bin/bash
+   docker exec -it encifher-signet-instance /bin/bash
    ```
 
 8. **Pull the latest version of the image**:
 
    ```bash
-   docker pull surge-signet
+   docker pull encifher-signet
    ```
 
 9. **Remove an image**:
 
    ```bash
-   docker rmi surge-signet
+   docker rmi encifher-signet
    ```
 
 10. **View all Docker images**:

@@ -23,9 +23,9 @@ RUN case $TARGETPLATFORM in \
 
 FROM debian:buster-slim as custom-signet-bitcoin
 
-LABEL org.opencontainers.image.authors="Surge Build Team"
+LABEL org.opencontainers.image.authors="RizeLabs Encifher"
 LABEL org.opencontainers.image.licenses=MIT
-LABEL org.opencontainers.image.source="https://github.com/surgebuild/bitcoin_signet"
+LABEL org.opencontainers.image.source="https://github.com/RizeLabs/bitcoin-signet"
 
 ENV BITCOIN_DIR /root/.bitcoin 
 
